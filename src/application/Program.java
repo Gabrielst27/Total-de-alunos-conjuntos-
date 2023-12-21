@@ -12,7 +12,7 @@ public class Program {
 		
 		Set<Integer> set = new HashSet<>();
 		
-		System.out.print("How many students for course English?: ");
+		System.out.print("How many students for course ENGLISH?: ");
 		int n = sc.nextInt();
 		
 		for(int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ public class Program {
 			set.add(id);
 		}
 		
-		System.out.print("How many students for course Portuguese?: ");
+		System.out.print("How many students for course PORTUGUESE?: ");
 		n = sc.nextInt();
 		
 		for(int i = 0; i < n; i++) {
@@ -30,7 +30,16 @@ public class Program {
 			set.add(id);
 		}
 		
-		System.out.println(set);
+		System.out.print("How many students for course SPANISH: ");
+		n = sc.nextInt();
+		
+		for(int i = 0; i < n; i++) {
+			System.out.print("ID: ");
+			int id = sc.nextInt();
+			set.add(id);
+		}
+		
+		System.out.println("Total students: " + set.size());
 		
 		sc.close();
 
